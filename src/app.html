@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="aberTravelDark">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="C4" />
+		<meta name="theme-color" content="#292929" />
+		<meta name="description" content="TravelSure, a Travel Guarantee Product from AberTravel" />
+
+		<link rel="icon" type="image/png" href="%svelte.assets%/favicon.ico" />
+		<link rel="apple-touch-icon" href="%svelte.assets%/icons/manifest-icon-192.maskable.png" />
+		<link rel="manifest" href="%svelte.assets%/manifest.json" />
+
+		%svelte.head%
+	</head>
+	<body>
+		<noscript>
+			<div>Oops! Javascript required here! Allow it and try again!</div>
+		</noscript>
+		<script>
+			if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');
+		</script>
+		<div>%svelte.body%</div>
+	</body>
+</html>
